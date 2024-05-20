@@ -1,0 +1,252 @@
+<!doctype html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.6/dist/XP.css" />
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+</head>
+<style>
+.center {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  padding: 100px;
+}
+
+.dropshadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 10px;
+}
+
+div.a {
+  text-indent: 2em;
+}
+
+body {
+	background-image: url("bliss.png");
+}
+
+.outer {
+    top:0;
+    bottom:0;
+}
+
+.inner {
+    max-height:400px;
+    overflow-y:auto;
+}
+
+</style>
+<body class="element" style="dropshadow">
+<div class="center"> 
+	<div class="window" style="dropshadow">
+	<div class="title-bar">
+	<div class="title-bar-text">WBL-Portfolio: New Horizons Regional Education Center - By Auston Tillman</div>
+		<div class="title-bar-controls">
+			<button aria-label="Minimize"></button>
+			<button aria-label="Maximize"></button>
+			<button aria-label="Close"></button>
+		</div>
+	</div>
+	<div class="window-body outer">
+		<menu role="tablist">
+			<button aria-selected="true" aria-controls="home">Home</button>
+			<button aria-controls="awards">Awards</button>
+			<button aria-controls="projects">Products</button>
+			<button aria-controls="activities">Activities</button>
+		</menu>
+
+<!--Home Tab-->
+
+    <article role="tabpanel" id="home">
+	<div class="flex-container">
+		<fieldset style="width:30%;float:left">
+			<legend>This site wouldn't exist without this \/</legend>
+			<a href="https://nhrec.org/">
+				<img style="width: 200px;height: 200px;padding: 5px 10px;float: left" src="NHREC.png" />
+			</a>
+		</fieldset>
+		<div class="window-body" style="width: 55%;padding-left:32px;float: right">
+			<div>
+				<p><b>Who am I?</b></p>
+				<div class="a">
+					<p>Hi! My name is Auston, I have been facinated by computers for as long as I can remember. Ever since I was a child I have been tinkering around with computers. Wheather it be navigating through menus, troubleshooting problems my classmates or I run into, modifying files and using the computer to create my own little world. This whole hobby with technology has lead me to a whole new path of opportunities with multiple certifications to continue the long journey, thanks to the New Horizons Regional Education Center</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</article>
+
+<!--Awards Tab-->
+
+    <article role="tabpanel" hidden id="awards">
+		<p style="text-align: center;padding-bottom: 10px"><b>✨🏆Accomplishments I've earned at New Horizons Regional Education Center🏆✨</b><br></p>
+	<div class="flex-container">
+		<fieldset style="width:33%;float:left">
+			<legend style="text-align: center;">NOCTI Cybersecurity Fundamentals:<br>Earned March 2024</legend>
+			<a href="https://nhrec.org/">
+				<img style="width: 200px;height: 200px;padding: 5px 10px;float: left" src="nocti.png" />
+			</a>
+		</fieldset>
+		<fieldset style="width:33%">
+			<legend style="text-align: center;">COMPTIA Security Pro Certification:<br>Earned May 2024</legend>
+			<a href="https://w3.testout.com/pro-certifications/security-pro">
+				<img style="width: 200px;height: 200px;padding: 5px 10px;float: left" src="spro.png" />
+			</a>
+		</fieldset>
+		<fieldset style="width:33%;float:right">
+			<legend style="text-align: center;">SANS SEC:275 Course Certification:<br>Earned May 2024</legend>
+			<a href="https://www.giac.org/certifications/foundational-cybersecurity-technologies-gfact/">
+				<img style="width: 200px;height: 200px;padding: 5px 10px;float: left" src="sans.svg" />
+			</a>
+		</fieldset>
+	</div>
+	</article>
+
+<!--Projects Tab-->
+
+    <article role="tabpanel" hidden id="projects">
+	<div>	
+		<p style="text-align: center;padding-bottom: 10px"><b>Products of work I have done at New Horizons Regional Education Center</b><br></p>
+	<div class="inner">
+			<div class="flex-container">
+				<fieldset style="width:30%;float:left">
+					<legend>Wires are being held in the T-568B layout</legend>
+						<img style="width: 200px;height: 200px;padding: 5px 10px;float: left" src="wires.png" />
+				</fieldset>
+				<div class="window-body" style="width: 55%;padding-left:32px;float: right">
+					<div>
+						<p><b>Hello Copper Cable!!</b></p>
+					<div class="a">
+						<p>I have conducted a hands-on project to create a Straight Through Cat5 copper cable in the T568B layout. The project involved using wire cutters, wire strippers, and a crimper. I achieved experience in creating a copper cable using the appropriate tools and have been able to recreate the project with effeciency and improvement each time.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		<div class="flex-container">
+			<div class="window-body" style="width: 55%;padding-left:32px;float: left">
+				<div>
+					<p><b>Linux basics in the form of a CTF type game</b></p>
+					<div class="a">
+						<p>Brigante is a self-paced, hands-on exercise with multiple levels designed to familiarize beginners with the Linux user interface and terminal commands. It is based on OverTheWire.org's Bandit wargame. The game is presented as a series of increasingly difficult levels. Solving one level gives the user access to the next, and students will have to apply problem-solving skills as they make their way through the series of challenges. It was quite difficult for me to get through but I persevered.</p>
+					</div>
+				</div>
+			</div>
+			<fieldset style="width:30%;float:right">
+				<legend>Linux terminal headache</legend>
+						<img style="width: 200px;height: 200px;padding: 5px 10px;float: right" src="otw.png" />
+			</fieldset>
+		</div>
+		<div class="flex-container">
+			<fieldset style="width:30%;float:left">
+				<legend>Me rebuilding a desktop tower we took apart</legend>
+						<img style="width: 200px;height: 200px;padding: 5px 10px;float: left" src="build.png" />
+			</fieldset>
+		<div class="window-body" style="width: 55%;padding-left:32px;float: right">
+			<div>
+				<p><b>You broke it. You put it back together.</b></p>
+				<div class="a">
+					<p>Conducted hands-on dismantling and reassembling of a desktop computer; using an anti-static wrist strap, a screwdriver, and an electromagnetic mat; while identifying each part and how each component could be exploited by an attacker. I had collaborated with one of my peers to understand each component of a computer and identify each potential security vulnerability that it may hold.</p>
+				</div>
+			</div>
+		</div>
+		</div>		
+	</div>
+	</div>
+	</article>
+	
+<!--woaw-->
+    <article role="tabpanel" hidden id="activities">
+	<div>	
+		<p style="text-align: center;padding-bottom: 10px"><b>My participation in Cyber related activities!</b><br></p>
+	<div class="inner">
+			<div class="flex-container">
+				<fieldset style="width:30%;float:left">
+					<legend>Picture taken end of the trip before leaving</legend>
+						<img style="width: 200px;height: 200px;padding: 5px 10px;float: left" src="slam.png" />
+				</fieldset>
+				<div class="window-body" style="width: 55%;padding-left:32px;float: right">
+					<div>
+						<p><b>Virginia Cyber Slam 3.0 Conference Attendee</b></p>
+					<div class="a">
+						<p>We went to George Mason University to attend the Virginia Cyber Slam 3.0 Conference where we had activities and awards held for us to participate in</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		<div class="flex-container">
+			<div class="window-body" style="width: 55%;padding-left:32px;float: left">
+				<div>
+					<p><b>CyberStart America Scholarship Recipient</b></p>
+					<div class="a">
+						<p>I was a participant in CyberStart America 2023-2024 and earned one of the highest scores in the region of Virginia. Because of this, I was eligible to take a $4,000 course and an attempt at its certification for FREE!</p>
+					</div>
+				</div>
+			</div>
+			<fieldset style="width:30%;float:right">
+				<legend>Me holding my certification!!</legend>
+						<img style="width: 200px;height: 200px;padding: 5px 10px;float: right" src="cyberstart.png" />
+			</fieldset>
+		</div>
+		<div class="flex-container">
+			<fieldset style="width:30%;float:left">
+				<legend>Skills USA</legend>
+						<img style="width: 200px;height: 200px;padding: 5px 10px;float: left" src="skillsusa.png" />
+			</fieldset>
+		<div class="window-body" style="width: 55%;padding-left:32px;float: right">
+			<div>
+				<p><b>I am a member of Skills USA</b></p>
+				<div class="a">
+					<p>SkillsUSA is the #1 workforce development organization for students. We empower students to become skilled professionals, career-ready leaders and responsible community members. From our mission to our reach, from our brand to our history, learn who we are, what we do and why we do it.</p>
+				</div>
+			</div>
+		</div>
+		</div>		
+	</div>
+	</div>
+	</article>
+
+		<div class="status-bar">
+			<p class="status-bar-field">Press F1 for help</p>
+			<p class="status-bar-field">Hello World!</p>
+			<p class="status-bar-field">CPU Usage: 14%</p>
+		</div>
+
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
